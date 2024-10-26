@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Elements</title>
+  </head>
+  <body>
+    <hr />
+    <hr />
+    <div>
+      <a href="index.html">
+        <img
+          src="index.jpg"
+          alt="Index Page"
+          style="width: 150px; height: 120px"
+      /></a>
+      <a href="elements.html">
+        <img
+          src="elements.jpg"
+          alt="Elements"
+          style="width: 150px; height: 100px"
+      /></a>
+      <a href="network.html">
+        <img
+          src="network.jpg"
+          alt="Network History"
+          style="width: 160px; height: 120px"
+      /></a>
+      <a href="about.html">
+        <img src="about.jpg" alt="About us" style="width: 150px; height: 120px"
+      /></a>
+    </div>
+    <hr />
+    <hr />
+    <!-- Header Starts -->
+    <div>
+      <h1>This is h1</h1>
+      <h2>This is h2</h2>
+      <h3>This is h3</h3>
+      <h6>This is h6</h6>
+    </div>
+    <!-- Header Ends -->
+    <div>
+      <p>
+        This is a paragraph..<br />
+        Im using br tag to go to the next line! <br />
+        With the use of <big>Big</big> tag, I can make words bigger than before.
+        and I don't need to tell you about what <small>small</small> tag can do.
+        <br />
+        U can highlight words with <mark style="color: red;">mark</mark> tag as well.<br />
+        The next item is deleted from document via <del>del tag</del>. You can
+        use <sub>Subscripted</sub> tag, to show chemical formulas like
+        h<sub>2</sub>o.
+        <br />
+        You can also use <sup>Supscripted</sup> tag for mathematical powers in
+        order to show two times two in numbers like this : 2<sup>2</sup>
+        <br /><br />
+        With hr tag, I can draw a horizental line.
+      </p>
+    </div>
+    <hr />
+    <div>
+      <a href=" https://www.google.com/"
+        >Click here to see an example of "a" tag via href attribute!</a
+      >
+    </div>
+    <div>
+      <ul>
+        <li style="color: red">Unordered list</li>
+        <li>A4Tech</li>
+        <li>Nvidia</li>
+        <li>TLC</li>
+      </ul>
+    </div>
+    <!-- In ordered list, u can use type attribute to change the list type (1 - A - a - I - i).
+                  Default type is 1 -->
+    <div>
+      <ol type="1">
+        <li style="color: green">Ordered List</li>
+        <li>RTX 4080</li>
+        <li>RTX 4080 Ti</li>
+        <li>RTX 4090</li>
+      </ol>
+    </div>
+    <div>
+      <dl>
+        <dt>dt elements</dt>
+        <dd>define a term</dd>
+        <dt>dd elements</dt>
+        <dd>defines a description</dd>
+      </dl>
+    </div>
+    <pre>
+ If I use pre tag,
+                 I don't need br tag in order to break lines.
+                 Like           This! 
+    </pre>
+    <div>
+      <ins>New content! something like new price after using del tag</ins>
+    </div>
+    <div>
+      <u>Underline</u>
+      <!-- it is what it is = a text formatted with underline  -->
+    </div>
+    <div>
+      <p>formula : <var>x</var> + 120 = 2 <var>y</var></p>
+      <!-- use var tag for varibles in formulas -->
+    </div>
+    <div>
+      <abbr title="Hyper text markup language">HTML</abbr><br /><br />
+      <!-- u can give some kind of caption to texts using abbr tag via title attribute. -->
+    </div>
+    <div>
+      <bdo dir="rtl">GOOGLE</bdo><br /><br />
+      <!-- change a text direction with <bdo dir="" ...</bdo> -->
+    </div>
+    <div>
+      Publish date :
+      <time datetime="2019-9-11T12:23:20">
+        Only machine can read and store this time.</time
+      >
+    </div>
+    <div>
+      <h3>
+        Example code of using html
+        entities&nbsp;:&nbsp;&nbsp;&nbsp;none&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        breakable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; space
+      </h3>
+    </div>
+    <div>
+      <code>
+        def myfunc(): print("code must be in code tag!") <br />
+        &lt;html&gt; <br />
+        &lt;/html&gt;
+      </code>
+    </div>
+    <div>
+      <p>
+        <!-- put keyboard inputs in kbd tag -->
+        Use <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd> to format your
+        <mark style="color: red">document</mark><br />
+        <!-- to make ur text highlighted with specific color type style attribute after the mark tag and give it the value of color -->
+        u can also use kbd tag to mention keyboard keys!<br />
+        use <kbd>Ctrl</kbd> + <kbd>G</kbd> to jump to specific line.
+        <br /><br />
+        This is a <q>qoute</q>
+      </p>
+    </div>
+    <div>
+      <h4>Samsung A Series</h4>
+    </div>
+    <div>
+      <ul>
+        <li>A10</li>
+        <li>A20</li>
+        <li>A30</li>
+        <!-- data tag with value attribute is a data stored in background for the sellers. -->
+        <li><data value="ASF50"></data>A50</li>
+        <li>A70</li>
+      </ul>
+    </div>
+    <hr />
+    <div>
+      <a href="pic.jpg" target="_blank" download>
+        <figure>
+          <img src="pic.jpg" alt="heisinberg" width="500" height="500" />
+          <figcaption>rolling</figcaption>
+        </figure>
+      </a>
+    </div>
+    <!-- u can also use this tag for images, example :
+       <picture>
+          source src=""
+      </picture> -->
+    <hr />
+    <div>
+      <video controls controlslist="nofullscreen" poster="pic.jpg" width="250">
+        <source src="Vid.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <hr />
+    <!-- controls = an attribute to make multimedia files playable + giving user controls (playe/pause - volume up/down/mute - fullscreen option - seeking and ...) -->
+    <!-- U can also try autoplay attribute in order to automaticly play the video on startup -->
+    <!-- Controlslist attribute values : nofullscreen - nodownload (not working on firefox yet) -->
+    <!-- Poster = video thumbnail -->
+    <div>
+      <audio controls>
+        <source src="audio.mp3" type="audio/mp3" />
+      </audio>
+    </div>
+    <hr />
+    <!-- 
+      What is SVG :
+  
+      a web-friendly vector file format. As opposed to pixel-based raster files like JPEGs,
+       vector files store images via mathematical formulas based on points and lines on a grid. 
+  
+       -->
+    <div>
+      <label for="coin">
+        <svg
+          fill="#000000"
+          height="250px"
+          width="250px"
+          version="1.1"
+          id="Layer_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 512 512"
+          xml:space="preserve"
+        >
+          <g>
+            <g>
+              <path
+                d="M460.245,106.548h-32.213l-11.136-25.6c-3.691-15.083-17.941-47.253-24.256-55.509
+              c-17.173-22.4-47.637-31.211-77.568-21.248l-55.659,24.384c-5.675,1.899-11.989,1.792-17.664-0.235l-65.45-23.573
+              c-15.936-5.717-33.792-4.032-50.24,4.757C106.347,20.105,90.88,39.818,86.08,59.594c-0.427,1.259-1.6,4.139-2.88,7.296
+              c-2.88,7.189-4.373,10.923-5.184,13.461l-11.413,26.197H51.776C23.232,106.548,0,129.759,0,158.303v3.157
+              c0,25.408,18.475,46.507,42.667,50.837v21.867c66.411-27.2,146.005-27.307,212.501-0.299
+              c32.32-13.376,67.797-20.16,103.403-20.651h7.509c35.52,0.405,70.955,7.083,103.253,20.331v-21.248
+              c24.214-4.33,42.667-25.408,42.667-50.837v-3.157C512,129.759,488.789,106.548,460.245,106.548z M469.333,161.461
+              c0,4.928-4.16,9.088-9.088,9.088H448H64H51.776c-4.949,0-9.109-4.16-9.109-9.088v-3.157c0-4.928,4.16-9.088,9.109-9.088h28.8
+              h333.461h46.208c4.928,0,9.088,4.16,9.088,9.088V161.461z"
+              />
+            </g>
+          </g>
+          <g>
+            <g>
+              <path
+                d="M68.23,270.176c1.664,33.216,10.261,67.669,38.379,70.08c43.328,3.669,75.947-3.243,96.747-20.587
+              c17.984-15.019,24.256-35.627,26.389-49.749C178.673,251.168,119.153,251.275,68.23,270.176z"
+              />
+            </g>
+          </g>
+          <g>
+            <g>
+              <path
+                d="M282.259,269.291c2.133,14.123,8.405,34.709,26.389,49.728c20.801,17.366,53.291,24.299,96.747,20.587
+              c28.117-2.389,36.693-36.864,38.379-70.059C392.851,250.647,333.353,250.54,282.259,269.291z"
+              />
+            </g>
+          </g>
+          <g>
+            <g>
+              <path
+                d="M409.707,382.085c-8.981,0.768-17.664,1.152-25.984,1.152c-44.693,0-80.427-10.944-106.411-32.683
+              c-8.747-7.296-15.531-15.275-21.077-23.424c-5.611,8.363-12.565,16.576-21.547,24.064
+              c-25.984,21.739-61.717,32.683-106.432,32.683c-8.341,0-16.981-0.384-25.963-1.152c-17.643-1.493-42.176-9.024-59.627-35.499
+              v108.565c0,30.912,25.173,56.085,56.107,56.085h314.453c30.933,0,56.107-25.173,56.107-56.085V346.587
+              C451.883,373.061,427.349,380.592,409.707,382.085z M277.333,447.878h-42.667c-11.797,0-21.333-9.557-21.333-21.333
+              s9.536-21.333,21.333-21.333h42.667c11.797,0,21.333,9.557,21.333,21.333S289.131,447.878,277.333,447.878z"
+              />
+            </g>
+          </g>
+        </svg>
+      </label>
+    </div>
+    <div>
+      <button id="coin">earn 10$ per tap!</button>
+    </div>
+    <div>
+      <!-- details tag with the help of summery tag, creates a widget 
+     in which information is visible only when the widget is toggled into an "open" state. -->
+      <details>
+        <summary style="font-size: 32pt; font-weight: bold; text-align: center">
+          An example of Iframe element, framing Digikala Homepage.
+        </summary>
+        <iframe
+          src="https://digikala.com"
+          style="width: 40vw; height: 40vw"
+          frameborder="1"
+        ></iframe>
+        <!-- frameborder values : 0 or 1 . -->
+      </details>
+    </div>
+    <hr />
+  </body>
+</html>

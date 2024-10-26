@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fa=IR / en=US" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Submit a Form</title>
+    <!-- Style tag is a way to use css in html webpage and it's called Internal CSS!
+     You can only insert code in css language.  -->
+    <style>
+      input,
+      textarea {
+        background-color: gray;
+      }
+      * {
+        background-color: rgba(0, 0, 0, 0.185);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>What is a Form?</h1>
+      <p>
+        An HTML form is used to collect user input. The user input is most often
+        sent to a server for processing.
+      </p>
+    </div>
+    <form action="core.php" method="post">
+      <!-- what are the features of Action and method attributes?
+         -The method attribute specifies how to send form-data. 
+         -The form-data can be sent as get or post methods.
+         -The Action attribute links the form to the php file.(Saving data, modifying inputs and more..)
+          -->
+      <fieldset>
+        <legend>Personal Information</legend>
+        <!-- The <fieldset> tag is used to group related elements in a form.
+            and the <legend tag defines a caption for the fieldset element.
+        -->
+        <div>
+          <label for="FNInput">First Name</label>
+          <input id="FNInput" type="text" name="FirstName" value="" />
+          <!-- 
+          The <label> element is used to associate a text label with a form <input> field.
+          The for attribute specifies the id of the form element the label should be bound to.
+          The <input element specifies an input field where the user can enter data.
+          The Type= attribute Specifies the type of <input> element to display.
+          It's important to use name attribute!!
+          ReadOnly Atrribute = Makes the input non-editable.
+          -->
+        </div>
+
+        <div>
+          <label for="LNInput">Last Name</label>
+          <input id="LNInput" type="text" name="LastName" value="" />
+        </div>
+
+        <div>
+          <label for="F">Female</label>
+          <input id="F" type="radio" name="sex" value="Female" />
+          <label for="M">Male</label>
+          <input id="M" type="radio" name="sex" value="Male" />
+        </div>
+
+        <div>
+          <label for="PhotoID">Choose a Photo of your ID</label>
+          <input id="PhotoID" type="file" name="ID" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Location</legend>
+        <!-- The <select> element is used to create a vertical input list.
+        The <option> tags inside the <select> element define the available options in the list.
+        -->
+        <div>
+          <select name="Country" id="" disabled>
+            <option value="IRAN">کشور: ایران</option>
+          </select>
+        </div>
+
+        <div>
+          <select name="City" id="" required>
+            <option value="">Location</option>
+            <option value="Rasht">رشت</option>
+            <option value="Shiraz">شیراز</option>
+            <option value="Esfahan">اصفحان</option>
+            <option value="Fooman">فومن</option>
+            <!-- To select more than 2 options, use "multiple" attribute! -->
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact</legend>
+
+        <div>
+          <label for="Num">Phone Number</label>
+          <input
+            id="Num"
+            type="number"
+            name="PhoneNumber"
+            placeholder="example : +9891173212"
+            required
+          />
+          <!-- The placeholder attribute specifies a short hint that describes the expected value of an input. -->
+        </div>
+
+        <div>
+          <label for="Email">Email</label>
+          <input
+            id="Email"
+            type="email"
+            name="Email"
+            placeholder="example : @email.com"
+          />
+        </div>
+
+        <div>
+          <label for="Address">Fill Your Address</label><br />
+          <textarea name="Address" id="Address" placeholder="town/street/zip code"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Finalizing</legend>
+
+        <div>
+          <label for="AcceptPolicy">I accept the agreement </label>
+          <input id="AcceptPolicy" type="checkbox" />
+        </div>
+
+        <div>
+          <input type="submit" name="SubmitData" value="Sign In" disabled />
+          <button type="submit">Login</button>
+          <button type="reset">Fill Again</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
